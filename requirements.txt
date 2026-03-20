@@ -1,0 +1,8 @@
+pywhatkit
+pyautogui
+Pillow
+google-genai
+groq
+SpeechRecognition
+pywin32
+python-dotenv
