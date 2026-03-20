@@ -1,8 +1,7 @@
-pywhatkit
-pyautogui
-Pillow
 google-genai
 groq
 SpeechRecognition
-pywin32
+pyautogui
+Pillow
 python-dotenv
+pywhatkit
