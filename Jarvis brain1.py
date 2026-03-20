@@ -9,8 +9,16 @@ import win32com.client
 import webbrowser  # Naya import links kholne ke liye
 
 # --- Clients Setup ---
-groq_client = Groq(api_key="")
-gemini_client = genai.Client(api_key="")
+
+import os
+from dotenv import load_dotenv
+
+# Ye line .env file se keys ko utha legi
+load_dotenv() 
+
+# Ab key ko direct likhne ki jagah aise likho
+groq_client = Groq(api_key=os.getenv("gsk_yha_apni_key_daalogsk_J2pEkD2mxylbp63TbWaZWGdyb3FYWRI6NWRWDhjWLUocrogwMbnG"))
+gemini_client = genai.Client(api_key=os.getenv("AIzaSyAhj3xdU2ggA7xtPMaoDyeZ-Tl3E8cQaH0"))
 speaker = win32com.client.Dispatch("SAPI.SpVoice")
 
 def speak(text):
