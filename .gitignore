@@ -1,3 +1,5 @@
+.env
+
 import pywhatkit as kit # Sabse upar add karein
 import os
 import pyautogui
